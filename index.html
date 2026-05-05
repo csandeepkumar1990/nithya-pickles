@@ -658,6 +658,92 @@
     .order-method h3 { font-size: 18px; font-weight: 700; }
     .order-method p { font-size: 14px; opacity: 0.8; margin: 0; }
 
+    /* ====== WHATSAPP FLOAT ====== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .whatsapp-bubble {
+      background: #25D366;
+      color: white;
+      border-radius: 50px;
+      padding: 14px 22px;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Noto Sans Telugu', sans-serif;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .whatsapp-bubble:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(37,211,102,0.55);
+    }
+
+    .whatsapp-bubble .wa-icon { font-size: 26px; }
+
+    /* ====== OFFER BANNER ====== */
+    .offer-banner {
+      background: linear-gradient(135deg, #1B5E20, #2E7D32);
+      color: white;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .offer-banner .offer-tag {
+      background: #FFD54F;
+      color: #1B5E20;
+      font-size: 13px;
+      font-weight: 900;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      flex-shrink: 0;
+    }
+
+    .offer-banner .offer-text {
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .offer-banner .offer-price {
+      font-size: 22px;
+      font-weight: 900;
+      color: #FFD54F;
+    }
+
+    .offer-banner .offer-cta {
+      background: #FFD54F;
+      color: #1B5E20;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 800;
+      font-family: 'Noto Sans Telugu', sans-serif;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .offer-banner .offer-cta:hover { opacity: 0.85; }
+
     /* ====== FOOTER ====== */
     footer {
       background: #1A0A00;
@@ -774,6 +860,14 @@
     <span>🌿 సంప్రదాయ రెసిపీలు</span>
     <span>🎁 పండుగ గిఫ్ట్ ప్యాక్స్ అందుబాటులో</span>
   </div>
+</div>
+
+<!-- ====== OFFER BANNER ====== -->
+<div class="offer-banner">
+  <span class="offer-tag">🔥 నేటి ఆఫర్</span>
+  <span class="offer-text">🍗 చికెన్ పచ్చడి 250gm</span>
+  <span class="offer-price">కేవలం ₹250/-</span>
+  <a href="https://wa.me/917997456383?text=Hello%20Nithya%20Pickles!%20I%20would%20like%20to%20order%20Chicken%20Pickle%20250gm%20for%20%E2%82%B9250%20as%20per%20the%20current%20offer." class="offer-cta">WhatsApp లో ఆర్డర్ చేయండి</a>
 </div>
 
 <!-- ====== HEADER ====== -->
@@ -1504,11 +1598,11 @@
       <h3>ఫోన్ ద్వారా</h3>
       <p>+91 79974 56383<br/>సోమ–శని, 9am–6pm</p>
     </div>
-    <div class="order-method">
+    <a href="https://wa.me/917997456383?text=Hello%20Nithya%20Pickles!%20I%20would%20like%20to%20place%20an%20order." class="order-method" style="text-decoration:none;">
       <div class="method-icon">💬</div>
       <h3>WhatsApp ద్వారా</h3>
       <p>మెసేజ్ పంపండి<br/>త్వరగా స్పందన</p>
-    </div>
+    </a>
     <div class="order-method">
       <div class="method-icon">🛍️</div>
       <h3>ఆన్‌లైన్ ఆర్డర్</h3>
@@ -1584,6 +1678,14 @@
     <p style="color:#FF8A65;">🌶️ అమ్మ చేతి రుచి — ప్రతి జాడీలో</p>
   </div>
 </footer>
+
+<!-- ====== WHATSAPP FLOAT BUTTON ====== -->
+<div class="whatsapp-float">
+  <a href="https://wa.me/917997456383?text=Hello%20Nithya%20Pickles!%20I%20would%20like%20to%20place%20an%20order." class="whatsapp-bubble" target="_blank">
+    <span class="wa-icon">💬</span>
+    WhatsApp లో ఆర్డర్ చేయండి
+  </a>
+</div>
 
 </body>
 </html>
